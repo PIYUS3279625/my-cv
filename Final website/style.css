@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Body */
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #444;
+}
+
+/* Navigation */
+nav {
+	background-color: #333;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+nav .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+nav h1 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+	 font-weight:bold;
+	transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+	color: #ddd;
+}
+
+/* Hero Section */
+#hero {
+	background-image: url("./background.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#hero h1 {
+	font-size: 48px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#hero p {
+	font-size: 24px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.cta-btn {
+	display: inline-block;
+	background-color: #f44336;
+	color: #fff;
+	padding: 15px 30px;
+	border-radius: 5px;
+	font-size: 18px;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+}
+
+.cta-btn:hover {
+	background-color: #e53935;
+}
+
+/* About Section */
+#about {
+	background-color: #f5f5f5;
+	padding: 80px 0;
+}
+
+#about h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+#about p {
+	font-size: 18px;
+	color: #555;
+	margin-bottom: 20px;
+}
+
+#about ul {
+	margin-left: 30px;
+}
+
+#about li {
+	margin-bottom: 10px;
+}
+
+/* Education Section */
+#education {
+	background-color: #fff;
+	padding: 80px 0;
+}
+
+#education h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 40px;
+}
+
+.timeline {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-top: 40px;
+	height: 100%;
+	border: 1px solid #ddd;
+}
+
+.timeline-item {
+	position: relative;
+	margin-bottom: 50px;
+}
+
+.timeline-date {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(-50%, -50%);
+	background-color: #f44336;
+	color: #fff;
+	padding: 8px 12px;
+	font-size: 14px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.timeline-content {
+	position: relative;
+	top: 20px;
+	left: 50%;
+	width: 45;
+}
